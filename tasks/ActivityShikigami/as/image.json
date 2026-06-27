@@ -20,7 +20,7 @@
   {
     "itemName": "climb_mode_pass",
     "imageName": "as_climb_mode_pass.png",
-    "roiFront": "1142,546,21,21",
+    "roiFront": "1148,541,25,32",
     "roiBack": "1129,510,48,69",
     "method": "Template matching",
     "threshold": 0.8,
@@ -38,7 +38,7 @@
   {
     "itemName": "climb_mode_switch",
     "imageName": "as_climb_mode_switch.png",
-    "roiFront": "1232,543,29,26",
+    "roiFront": "1232,541,32,34",
     "roiBack": "1174,511,104,82",
     "method": "Template matching",
     "threshold": 0.8,

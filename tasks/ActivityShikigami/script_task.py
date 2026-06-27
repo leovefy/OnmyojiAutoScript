@@ -349,6 +349,10 @@ class ScriptTask(StateMachine, GameUi, BaseActivity, SwitchSoul, ActivityShikiga
         根据配置判断当前爬塔类型是否锁定阵容, 并执行锁定或解锁
         """
         enable_preset = getattr(battle_conf, f"enable_{self.climb_type}_preset", False)
+        self.screenshot()
+        if not self.appear(self.I_LOCK) and not self.appear(self.I_UNLOCK):
+            logger.warning(f'{self.climb_type} team lock button not found, skip lock team')
+            return
         if not enable_preset:
             logger.info(f'Lock {self.climb_type} team')
             self.ui_click(self.I_UNLOCK, stop=self.I_LOCK, interval=1.5)
@@ -416,5 +420,4 @@ if __name__ == '__main__':
     t = ScriptTask(c, d)
 
     t.run()
-
 

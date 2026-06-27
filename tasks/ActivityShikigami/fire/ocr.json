@@ -1,8 +1,8 @@
 [
   {
     "itemName": "fire",
-    "roiFront": "1124,599,96,50",
-    "roiBack": "1123,570,106,100",
+    "roiFront": "1136,605,78,52",
+    "roiBack": "1104,584,150,112",
     "mode": "Single",
     "method": "Default",
     "keyword": "挑战",
@@ -19,9 +19,9 @@
   },
   {
     "itemName": "remain_pass",
-    "roiFront": "803,17,39,28",
-    "roiBack": "803,17,39,28",
-    "mode": "DigitCounter",
+    "roiFront": "598,16,62,32",
+    "roiBack": "598,16,62,32",
+    "mode": "Digit",
     "method": "Default",
     "keyword": "",
     "description": "活动体力的剩余检测"
