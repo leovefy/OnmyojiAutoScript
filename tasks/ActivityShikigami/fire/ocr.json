@@ -10,9 +10,9 @@
   },
   {
     "itemName": "remain_ap",
-    "roiFront": "584,15,63,30",
-    "roiBack": "584,15,63,30",
-    "mode": "DigitCounter",
+    "roiFront": "268,588,100,35",
+    "roiBack": "230,588,140,35",
+    "mode": "Digit",
     "method": "Default",
     "keyword": "",
     "description": "体力的数量检测"

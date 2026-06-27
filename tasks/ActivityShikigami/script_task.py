@@ -203,7 +203,7 @@ class ScriptTask(StateMachine, GameUi, BaseActivity, SwitchSoul, ActivityShikiga
             #  --------------------------------------------------------------
             self.lock_team(self.conf.general_battle)
             if not self.check_tickets_enough():
-                logger.warning(f'No tickets left, wait for next time')
+                logger.warning(f'No {self.climb_type} resource left, wait for next time')
                 break
             if self.conf.general_climb.random_sleep:
                 random_sleep(probability=0.2)
@@ -236,7 +236,7 @@ class ScriptTask(StateMachine, GameUi, BaseActivity, SwitchSoul, ActivityShikiga
             #  --------------------------------------------------------------
             self.lock_team(self.conf.general_battle)
             if not self.check_tickets_enough():
-                logger.warning(f'No tickets left, wait for next time')
+                logger.warning(f'No {self.climb_type} resource left, wait for next time')
                 break
             if self.conf.general_climb.random_sleep:
                 random_sleep(probability=0.2)
